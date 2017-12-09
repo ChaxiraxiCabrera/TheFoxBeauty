@@ -156,7 +156,7 @@ h4 {
 .align-items,
 .align-end,
 .align-center,
-.align-horiz {
+.align-horiz, .align-start {
     display: flex;
     align-items: baseline;
 }
@@ -172,7 +172,13 @@ h4 {
 }
 
 .align-end {
+    align-items: flex-end;
     justify-content: flex-end;
+}
+
+.align-start{
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .divider-vertical {
@@ -236,35 +242,6 @@ h4 {
 .sct-images p {
     font-size: 16px;
     font-weight: 700;
-}
-
-
-.sct-images-back1 {
-    background-image: url(../img/fondos/back3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 770px;
-}
-
-.sct-images-back2 {
-    background-image: url(../img/fondos/back4.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 770px;
-}
-
-.sct-images-back3 {
-    background-image: url(../img/fondos/back5.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 510px;
-}
-
-.sct-images-back4 {
-    background-image: url(../img/fondos/back6.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 510px;
 }
 
 .sct-features {
@@ -389,23 +366,57 @@ h4 {
     font-size: 70px;
 }
 
-.sct-images h2 {
-    border: none;
-     margin-bottom: 10px;
+.sct-images .col-lg-6, .sct-images .col-lg-7, .sct-images .col-lg-5{
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.sct-images-back1 h2 {
-    padding-top: 400px;
-   
-}
-
-.sct-images-back1 .btn {
+.sct-images-1, .sct-images-2, .sct-images-3, .sct-images-4 {
+    background-image: url(../img/fondos/back3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 770px;
     color: #fff;
-    border: 2px solid #fff;
 }
 
-.sct-images-back4 h2 {
-    padding-top: 150px;
+.sct-images-2 {
+    background-image: url(../img/fondos/back4.jpg);
+    padding-left: 20px;
+    color: #000;
+}
+
+.sct-images-3, .sct-images-4 {
+    background-image: url(../img/fondos/back5.jpg);
+    height: 510px;
+    padding-left: 20px;
+    color: #000;
+}
+
+.sct-images-4 {
+      background-image: url(../img/fondos/back6.jpg);
+    color: #fff;
+}
+
+.sct-images h1 {
+    padding-top: 0;
+}
+
+.sct-images-1 .btn, .sct-images-4 .btn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.sct-images-4 div {
+    
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+}
+
+.content {
+    width: 400px;
 }
 
 
